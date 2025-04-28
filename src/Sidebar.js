@@ -32,9 +32,9 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <Card className="flex   h-full w-60 opacity-0.05 p-4 shadow-xl bg-gradient-to-r from-indigo-600 to-purple-800">
+    <Card className="ml-auto opacity-90  h-full w-60  shadow-xl bg-gradient-to-r from-indigo-600 to-purple-800">
       <div className="p-4 mb-2">
-        <Typography variant="h5" color="white" className="text-xl">
+        <Typography variant="h5" color="white" className="text-xl underline">
           Sidebar
         </Typography>   
        </div>
