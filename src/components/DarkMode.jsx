@@ -23,9 +23,9 @@ const DarkMode = () => {
         <button onClick={Dark.toggle}>
         {
         Dark.value?
-        <FaMoon className="text-white w-40 h-10"/>
+        <FaMoon className="text-white w-40 h-8"/>
         :
-        <FaSun className="text-orange-300 w-40 h-10"/>
+        <FaSun className="text-orange-300 w-40 h-8"/>
         }
         </button>
         

@@ -32,35 +32,35 @@ const Sidebar = () => {
   const navigate = useNavigate();
 
   return (
-    <Card className="ml-auto opacity-90  h-full w-60  shadow-xl bg-gradient-to-r from-indigo-600 to-purple-800">
+    <Card className=" ml-auto opacity-90  h-full w-60  shadow-xl bg-gradient-to-r from-indigo-600 to-purple-800">
       <div className="p-4 mb-2">
         <Typography variant="h5" color="white" className="text-xl underline">
           Sidebar
         </Typography>   
        </div>
        <List>
-        <ListItem>
+        <ListItem className="hover:animate-bounce">
           <ListItemPrefix className="px-4 py-4">
             <FaHome className="text-white h-8 w-8 "/>
           </ListItemPrefix> 
          
-        <Typography variant="h5" color="white" className="text-xl" onClick={async() => {console.log('Clicked Home'); navigate("/")}}>
+        <Typography variant="h5" color="white" className="text-xl " onClick={async() => {console.log('Clicked Home'); navigate("/")}}>
           Home
         </Typography>   
         </ListItem> 
-        <ListItem>
-          <ListItemPrefix className="px-4 py-4"> 
-            <FaProjectDiagram className="text-white h-8 w-8"/>
+        <ListItem className="hover:animate-bounce">
+          <ListItemPrefix className="px-4 py-4 "> 
+            <FaProjectDiagram className="text-white h-8 w-8 "/>
           </ListItemPrefix>
-        <Typography variant="h5" color="white" className="text-xl" onClick={() => navigate("../Project",{replace:true})}>
+        <Typography variant="h5" color="white" className="text-xl " onClick={() => navigate("../Project",{replace:true})}>
           Projects
         </Typography>   
         </ListItem>
-        <ListItem> 
+        <ListItem className="hover:animate-bounce"> 
           <ListItemPrefix className='px-4 py-4'>
-            <UserCircleIcon className="text-white h-8 w-8"/>
+            <UserCircleIcon className="text-white h-8 w-8 "/>
           </ListItemPrefix>
-        <Typography variant="h5" color="white" className="text-xl"  onClick={() => navigate("/Contacts")}>
+        <Typography variant="h5" color="white" className="text-xl "  onClick={() => navigate("/Contacts")}>
           Contacts
         </Typography>   
           </ListItem>

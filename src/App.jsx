@@ -1,5 +1,5 @@
 import Content from './Content';
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar';
 import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
@@ -38,18 +38,20 @@ const App = () => {
             </Link>
             <h1 className="text-3xl text-white ml-4 font-semibold">Shoveet Singh</h1>
           </div>
-          
+          <div className=" ml-80">
           <DarkMode/>
-
+          </div>
+          <div className="">
           <a href="#" onClick={handleChange}>
           
          {
          sidebaropen?
-         <FaXmark className="text-white dark:text-yellow-200 h-10 w-40"/>
+         <FaXmark className="hover:rotate-45 text-white dark:text-yellow-200 h-10 w-40"/>
          :
-         <FaBars className='text-white dark:text-yellow-200 h-10 w-40'/>
+         <FaBars className='hover:rotate-45 text-white dark:text-yellow-200 h-10 w-40 '/>
          }
           </a>
+          </div>
         </div>
       </header>
       <div className="dark:bg-black dark:text-white">
